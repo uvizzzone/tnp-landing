@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TNP Department</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -31,31 +30,32 @@
     h1 {
       color: #1e3c72;
       font-weight: 600;
-      font-size: 32px;
     }
 
     h3 {
       margin-top: 30px;
       color: #1e3c72;
-      font-weight: 500;
     }
 
     p {
       color: #555;
       line-height: 1.6;
-      font-weight: 300;
     }
 
+    /* BUTTONS */
     .btn {
-      display: block;
-      margin: 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 12px auto;
       padding: 14px;
       width: 260px;
       text-decoration: none;
       color: white;
       border-radius: 10px;
       font-weight: 500;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
 
     .insta {
@@ -71,10 +71,19 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
     b {
       display: block;
       margin-top: 20px;
-      font-size: 16px;
       color: #1e3c72;
     }
 
@@ -83,16 +92,9 @@
 
 <body>
   <div class="container">
+
     <h1>🚀 Worried About Placements?</h1>
     <p>Stay updated with Training & Placement opportunities</p>
-
-    <a href="https://www.instagram.com/slietofficialtnp/" target="_blank" class="btn insta">
-      Follow on Instagram
-    </a>
-
-    <a href="https://in.linkedin.com/company/slietofficialtnp" target="_blank" class="btn linkedin">
-      Connect on LinkedIn
-    </a>
 
     <h3>About TNP Department</h3>
     <p>
@@ -116,6 +118,28 @@
     </p>
 
     <b>👉 Don’t miss opportunities — follow now!</b>
+
+    <!-- BUTTONS AT BOTTOM -->
+    <div class="cta">
+
+      <a href="https://www.instagram.com/slietofficialtnp/" target="_blank" class="btn insta">
+        <!-- Instagram Icon -->
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6-2.3a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 5.2zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/>
+        </svg>
+        Follow on Instagram
+      </a>
+
+      <a href="https://in.linkedin.com/company/slietofficialtnp" target="_blank" class="btn linkedin">
+        <!-- LinkedIn Icon -->
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M20.45 20.45h-3.55v-5.4c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.45-2.13 2.95v5.45H9.37V9h3.4v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+        </svg>
+        Connect on LinkedIn
+      </a>
+
+    </div>
+
   </div>
 </body>
 </html>
