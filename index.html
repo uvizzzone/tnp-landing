@@ -5,49 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TNP Department</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
     }
 
     .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
       padding: 40px;
       max-width: 700px;
-      margin: auto;
+      border-radius: 16px;
+      color: white;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
     }
 
     h1 {
-      color: #2c3e50;
+      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-weight: 500;
     }
 
     p {
-      color: #555;
+      font-weight: 300;
       line-height: 1.6;
+      opacity: 0.9;
     }
 
     .btn {
       display: block;
       margin: 15px auto;
-      padding: 12px;
-      width: 250px;
+      padding: 14px;
+      width: 260px;
       text-decoration: none;
       color: white;
-      border-radius: 8px;
-      font-weight: bold;
+      border-radius: 10px;
+      font-weight: 500;
+      transition: 0.3s ease;
     }
 
-    .insta { background: #e1306c; }
-    .linkedin { background: #0077b5; }
+    .insta {
+      background: linear-gradient(45deg, #e1306c, #fd1d1d);
+    }
+
+    .linkedin {
+      background: linear-gradient(45deg, #0077b5, #00a0dc);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    b {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+    }
 
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Worried About Placements?</h1>
+    <h1>🚀 Worried About Placements?</h1>
     <p>Stay updated with Training & Placement opportunities</p>
 
     <a href="https://www.instagram.com/slietofficialtnp/" target="_blank" class="btn insta">
@@ -79,7 +115,7 @@
       important placement announcements.
     </p>
 
-    <p><b>👉 Don’t miss opportunities — follow now!</b></p>
+    <b>👉 Don’t miss opportunities — follow now!</b>
   </div>
 </body>
 </html>
