@@ -25,12 +25,23 @@
       max-width: 700px;
       border-radius: 16px;
       box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in-out;
+
+      /* 🔥 Powerful Animation */
+      animation: popIn 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(40px);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-10px);
+      }
+      100% {
+        transform: scale(1) translateY(0);
+      }
     }
 
     h1 {
@@ -48,6 +59,7 @@
       line-height: 1.6;
     }
 
+    /* BUTTONS */
     .btn {
       display: flex;
       align-items: center;
@@ -71,9 +83,11 @@
       background: linear-gradient(45deg, #0077b5, #00a0dc);
     }
 
+    /* 🔥 Glow Hover Effect */
     .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2),
+                  0 0 25px rgba(0, 150, 255, 0.4);
     }
 
     .icon {
@@ -92,10 +106,31 @@
       color: #1e3c72;
     }
 
+    /* 🔥 Urgency */
     .urgency {
       color: red;
       font-weight: 600;
       margin-top: 15px;
+    }
+
+    /* 🔥 CTA Pulse */
+    .cta-pulse {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+      }
+      50% {
+        transform: scale(1.08);
+        text-shadow: 0 0 10px rgba(255, 100, 0, 0.6);
+      }
+      100% {
+        transform: scale(1);
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+      }
     }
 
   </style>
@@ -128,11 +163,13 @@
       important placement announcements.
     </p>
 
+    <!-- 🔥 Urgency -->
     <p class="urgency">
       ⚠️ Some opportunities close within hours — don’t miss out!
     </p>
 
-    <b>🔥 One follow can change your career</b>
+    <!-- 🔥 CTA -->
+    <b class="cta-pulse">🔥 One follow can change your career</b>
 
     <div class="cta">
 
@@ -154,4 +191,4 @@
 
   </div>
 </body>
-        </html>
+</html>
